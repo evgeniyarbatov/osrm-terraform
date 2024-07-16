@@ -15,11 +15,12 @@ osmconvert \
 -o=osm/hanoi.osm.pbf
 ```
 
-## Deploy
+## Terraform
 
 ```
 tf init
 tf apply -auto-approve
+tf destroy -auto-approve
 ```
 
 ## Validate
