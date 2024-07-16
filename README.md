@@ -1,6 +1,6 @@
 # osrm-terraform
 
-Host OSRM with AWS EC2 with Terraform.
+Deploy OSRM to AWS EC2 with Terraform.
 
 # OSM Map
 
