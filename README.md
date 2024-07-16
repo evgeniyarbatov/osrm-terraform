@@ -6,9 +6,7 @@ Host OSRM with AWS EC2 with Terraform.
 
 You need to add your own OSM map in `osrm/osm/hanoi.osm.pbf`.
 
-Note that size of the map will affect the amount of memory required to run OSRM.
-
-If you know the bounding box of the region you need, use this to create an extract:
+Note that size of the map will affect the amount of memory required to run OSRM. If you know the bounding box of the region you need, use `osmconvert` to create an extract:
 
 ```
 osmconvert \
@@ -23,3 +21,7 @@ osmconvert \
 tf init
 tf apply -auto-approve
 ```
+
+## Validate
+
+Validate OSRM is working as expected by using Jupyter Notebook in `notebooks\Query EC2 OSRM.ipynb`

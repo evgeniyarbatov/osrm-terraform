@@ -80,10 +80,12 @@ resource "aws_instance" "osrm" {
     inline = [
       "sudo apt-get update -y",
       "sudo apt-get upgrade -y",
-      "sudo apt-get install -y docker.io docker-compose-plugin",
-      "sudo systemctl start docker",
-      "sudo systemctl enable docker",
-      "sudo docker compose -f /home/ubuntu/docker-compose.yaml up -d",
+      "sudo apt-get install -y docker.io net-tools",
+      "sudo curl -SL https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose",
+      "sudo chmod +x /usr/local/bin/docker-compose",
+      "sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose",
+      "sudo service docker start",
+      "sudo docker-compose -f /home/ubuntu/docker-compose.yaml up -d",
     ]
   }
 }
