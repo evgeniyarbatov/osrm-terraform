@@ -2,6 +2,8 @@
 
 Deploy OSRM to AWS EC2 with Terraform.
 
+Check out [evgeniyarbatov/on-demand-ec2](https://github.com/evgeniyarbatov/on-demand-ec2) to see how to setup AWS GW for OSRM.
+
 # OSM Map
 
 You need to add your own OSM map in `osrm/osm/hanoi.osm.pbf`.
