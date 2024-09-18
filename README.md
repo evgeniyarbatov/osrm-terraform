@@ -13,7 +13,7 @@ Note that size of the map will affect the amount of memory required to run OSRM.
 ```
 osmconvert \
 ~/osm/vietnam-latest.osm.pbf \
--b=105.7157,20.9516,105.8912,21.0558 \
+-b=105.7230968755703,20.94747599582269,105.88684857934376,21.102540254240452 \
 -o=osm/hanoi.osm.pbf
 ```
 
